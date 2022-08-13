@@ -61,13 +61,26 @@ function manipulaDados(operacao, controle) {
     }
 }
 
-function atualizaEstatisticas (peca) {
-    estatisticas.forEach( (elemento) => {
+function atualizaEstatisticas(peca) {
+    estatisticas.forEach((elemento) => {
         console.log(elemento.dataset.estatistica);
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica];
     })
 
 }
 
-//botao
-robo.src='img/Robotron 2000 - Branco.png';
+botao.addEventListener('click', function () {
+
+    var corAmarelo = 'img/Robotron 2000 - Amarelo.png';
+    var corAzul = 'img/Robotron 2000 - Azul.png';
+    var corBranco = 'img/Robotron 2000 - Branco.png';
+    var corPreto = 'img/Robotron 2000 - Preto.png';
+    var corRosa = 'img/Robotron 2000 - Rosa.png';
+    var corVermelho = 'img/Robotron 2000 - Vermelho.png';
+    
+
+    if (robo.src = corAzul) {
+        robo.src = corBranco;
+    }
+})
+
