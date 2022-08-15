@@ -1,3 +1,9 @@
+window.onload = function () {
+    document.querySelector('#musica-tema').play();
+}
+
+
+
 const controle = document.querySelectorAll('[data-controle]');
 
 const estatisticas = document.querySelectorAll('[data-estatistica');
@@ -43,6 +49,18 @@ const pecas = {
     }
 }
 
+var i = 0;
+
+var coresRobo = [
+    'img/Robotron 2000 - Azul.png',
+    'img/Robotron 2000 - Amarelo.png',
+    'img/Robotron 2000 - Rosa.png',
+    'img/Robotron 2000 - Vermelho.png',
+    'img/Robotron 2000 - Branco.png',
+    'img/Robotron 2000 - Preto.png'
+]
+
+
 controle.forEach((elemento) => {
     elemento.addEventListener('click', (evento) => {
         manipulaDados(evento.target.dataset.controle, evento.target.parentNode);
@@ -63,24 +81,17 @@ function manipulaDados(operacao, controle) {
 
 function atualizaEstatisticas(peca) {
     estatisticas.forEach((elemento) => {
-        console.log(elemento.dataset.estatistica);
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica];
+        //console.log(elemento.dataset.estatistica, elemento.textContent);
     })
 
 }
 
 botao.addEventListener('click', function () {
-
-    var corAmarelo = 'img/Robotron 2000 - Amarelo.png';
-    var corAzul = 'img/Robotron 2000 - Azul.png';
-    var corBranco = 'img/Robotron 2000 - Branco.png';
-    var corPreto = 'img/Robotron 2000 - Preto.png';
-    var corRosa = 'img/Robotron 2000 - Rosa.png';
-    var corVermelho = 'img/Robotron 2000 - Vermelho.png';
-    
-
-    if (robo.src = corAzul) {
-        robo.src = corBranco;
+    i++;
+    robo.src = coresRobo[i];
+    if (i == coresRobo.length - 1) {
+        i = -1;
     }
 })
 
