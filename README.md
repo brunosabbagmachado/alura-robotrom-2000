@@ -9,4 +9,4 @@ Neste curso aprendi mais sobre:
 
 Além dos códigos criados durante o curso, aceitei o desafio do professor Pedro Marins de criar um botão que troque as cores do robô. De quebra, acrescentei uma música para tornar esse projeto mais divertido e épico.
 
-Para ver o projeto clique [aqui](https://brunosabbagmachado.github.io/robotrom-2000).
+Para ver o projeto clique [aqui](https://brunosabbagmachado.github.io/alura-robotrom-2000/).
