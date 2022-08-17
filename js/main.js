@@ -1,8 +1,4 @@
-window.onload = function () {
-    document.querySelector('#musica-tema').play();
-}
-
-
+document.querySelector('#musica-tema').play();
 
 const controle = document.querySelectorAll('[data-controle]');
 
